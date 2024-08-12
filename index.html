@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering Services - User</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.23.2/antd.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="ant-layout">
+        <header class="ant-layout-header">
+            <h1>Catering Service</h1>
+            <div class="ant-space">
+                <a href="#menu" class="ant-btn">Menu</a>
+                <a href="admin.html" id="adminButton" class="ant-btn ant-btn-primary">Admin Panel</a>
+            </div>
+        </header>
+
+        <div class="ant-layout-content">
+            <section id="menu" class="ant-card ant-card-bordered">
+                <h2>Our Menu</h2>
+                <form id="menuForm">
+                    <div id="categories" class="ant-space"></div>
+                    <div class="ant-form-item">
+                        <input type="text" id="userName" class="ant-input" placeholder="Your Name" required>
+                    </div>
+                    <div class="ant-form-item">
+                        <input type="date" id="cateringDate" class="ant-input" required>
+                    </div>
+                    <button type="submit" class="ant-btn ant-btn-primary">Submit</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <!-- Include jsPDF Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- Include SMTP.js for email sending -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/antd/4.23.2/antd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

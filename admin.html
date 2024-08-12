@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering Services - Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.23.2/antd.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="ant-layout">
+        <header class="ant-layout-header">
+            <h1>Admin Login</h1>
+        </header>
+
+        <div class="ant-layout-content">
+            <section id="login" class="ant-card ant-card-bordered">
+                <form id="loginForm">
+                    <div class="ant-form-item">
+                        <input type="text" id="adminUsername" class="ant-input" placeholder="Username" required>
+                    </div>
+                    <div class="ant-form-item">
+                        <input type="password" id="adminPassword" class="ant-input" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="ant-btn ant-btn-primary">Login</button>
+                </form>
+            </section>
+
+            <section id="admin" class="ant-card ant-card-bordered" style="display: none;">
+                <header>
+                    <h1>Admin Dashboard</h1>
+                    <a href="index.html" class="ant-btn">Go to User Side</a>
+                </header>
+                <h2>Manage Menu</h2>
+
+                <form id="categoryForm">
+                    <div class="ant-form-item">
+                        <input type="text" id="categoryName" class="ant-input" placeholder="Category Name" required>
+                    </div>
+                    <button type="submit" class="ant-btn ant-btn-primary">Add Category</button>
+                </form>
+
+                <form id="dishForm">
+                    <div class="ant-form-item">
+                        <select id="categorySelect" class="ant-select" required>
+                            <option value="" disabled selected>Select Category</option>
+                        </select>
+                    </div>
+                    <div class="ant-form-item">
+                        <input type="text" id="dishName" class="ant-input" placeholder="Dish Name" required>
+                    </div>
+                    <button type="submit" class="ant-btn ant-btn-primary">Add Dish</button>
+                </form>
+
+                <div id="adminCategories" class="ant-space"></div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/antd/4.23.2/antd.min.js"></script>
+    <script src="admin.js"></script>
+    <!-- Include jsPDF Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/antd/4.23.2/antd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
