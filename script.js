@@ -38,12 +38,12 @@ function sendPDFEmail() {
 }
 
 function sendEmail(pdfData) {
-    const adminEmail = 'admin@example.com';  // Replace with the actual admin email
+    const adminEmail = 'madcore6@gmail.com';  // Replace with the actual admin email
 
     Email.send({
-        SecureToken: 'YOUR_SECURE_TOKEN',  // Replace with your actual SMTP token
+        SecureToken: '093d3761-92a2-4385-88f3-fd20b9140146',  // Replace with your actual SMTP token
         To: adminEmail,
-        From: 'noreply@example.com',
+        From: 'user@gmail.com',
         Subject: 'New Catering Order',
         Body: 'Please find the attached catering order.',
         Attachments: [
